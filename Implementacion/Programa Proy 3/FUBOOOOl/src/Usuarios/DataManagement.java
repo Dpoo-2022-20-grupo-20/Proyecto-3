@@ -291,7 +291,8 @@ public class DataManagement {
 				equipo.setSuplentes(supl);
 				equipo.setTitulares(titul);
 				equipo.setTeam(Team);
-				client.setEquipo_fantasia(equipo);
+				
+				client.add_dt(equipo);
 				
 				List<Dream_Team> eq = Liga.getEquipos();
 				eq.add(equipo);

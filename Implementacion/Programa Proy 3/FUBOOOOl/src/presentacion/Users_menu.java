@@ -91,7 +91,7 @@ public class Users_menu extends Frames implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()== this.equipo) 
 		{this.dispose();
-		 new Menu_Equipo();}
+		 new team_Sel();}
 		else if(e.getSource()== this.datos)
 		{}
 		else if (e.getSource()== this.fun) {}

@@ -53,6 +53,7 @@ public class Controller  {
 	public int get_puntaje() {
 		return this.app.puntaje();
 	}
+	
 	public String get_id_Team() {
 		return this.app.get_id_team();
 	}
@@ -85,6 +86,17 @@ public class Controller  {
 	    return this.app.available_players(pos);	
 	}
 	
+	public List<String> get_teams(){
+		return this.app.get_teams();
+	} 
+	
+	public void reomve_team() {
+		this.app.remove_teams();
+	}
+	 public void set_dream(int pos) {
+		 this.app.set_team(pos);
+	 }
+	
 	public boolean empty_pos(String pos) {
 		return this.app.empty_pos(pos);
 	}
@@ -105,10 +117,12 @@ public class Controller  {
 			return this.app.nom_supl();
 	}
 	
+	
+	
 	public String get_capi() {
 		return this.app.get_capi();
 	}
-	
+		
 	public void set_capitan(String Nombre) {
 		this.app.set_capitan(Nombre);
 	}

@@ -116,9 +116,19 @@ public class App extends Observable
 		return this.actual.getPuntaje();		
 	}
 	
-
+	public List<String> get_teams(){
+		return this.actual.get_teams();
+	}
 	
-
+	public void set_team(int pos) {
+		this.actual.setEquipo_fantasia(pos);
+	}
+	
+	
+	public void remove_teams() {
+		this.actual.remove_team();
+	}
+	
 	public float sel_player(String pos, String name) {
 		return this.actual.vender_jugador(pos,name);
 	}

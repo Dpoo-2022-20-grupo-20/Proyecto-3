@@ -21,15 +21,24 @@ public class Cliente extends Usuario
 {
 	
 	public Dream_Team equipo_fantasia = null; 
-	public int puntaje = 0 ; 
+	public List<Dream_Team> equipos ;
+	
+	public int puntaje = 0 ;
+	private int pos; 
 	//public float presupuesto; 
 	//public int posicion; //Es del equipo?? 
 	
 	public Cliente(String name, String Clave) {
 		this.Nombre_Acceso=name ;
 		this.Clave = Clave;
+		this.equipos= new ArrayList<Dream_Team>();
 	}
 	
+	
+	
+	public void add_dt(Dream_Team equipo) {
+		this.equipos.add(equipo);
+	}
 	
 	public float get_presupuesto(){
 		return this.equipo_fantasia.getPresupuesto();
@@ -68,9 +77,28 @@ public class Cliente extends Usuario
 		this.puntaje = puntaje;
 	}
 	
-	public void setEquipo_fantasia(Dream_Team equipo_fantasia) {
-		this.equipo_fantasia = equipo_fantasia;
+	public void setEquipo_fantasia(int pos) {
+		this.pos= pos; 
+		for(Dream_Team team : this.equipos) {
+			System.out.println(team.getId());
+		}
+		this.equipo_fantasia = this.equipos.get(pos);
+		
 	}
+	
+	public void remove_team() {
+		
+		this.equipo_fantasia= null;
+	}
+	
+	public List<String> get_teams(){
+		List<String>ret= new ArrayList<String>();
+		for(Dream_Team team: this.equipos) {
+			ret.add(team.getId());			
+		}
+		return ret;
+	}
+	
 	
 	public String get_id_team(){
 		return this.equipo_fantasia.getId();
@@ -88,6 +116,7 @@ public class Cliente extends Usuario
 	{
 		Dream_Team equipo = new Dream_Team(App.usuarios.get(this.Nombre_Acceso)) ;
 		this.equipo_fantasia= equipo; 
+		this.equipos.add(equipo);
 		Liga.agregar_equipo(equipo);
 		return equipo.id;
 	}

@@ -394,8 +394,9 @@ public class Menu_Equipo extends Frames implements ActionListener {
 	
 	@Override
 	public void prev() {
+		Jprincipal.getControlador().reomve_team();
 		this.dispose();
-		new Users_menu();
+		new team_Sel();
 	}
 	
 	
@@ -420,7 +421,10 @@ public class Menu_Equipo extends Frames implements ActionListener {
 				this.pos.setVisible(false);
 				this.initial();
 				
-			}else { this.prev();}
+			}else { 
+				
+				this.prev();
+				}
 		}else if (e.getSource()==this.Vender) {
 			
 			this.Vender.setEnabled(false);
