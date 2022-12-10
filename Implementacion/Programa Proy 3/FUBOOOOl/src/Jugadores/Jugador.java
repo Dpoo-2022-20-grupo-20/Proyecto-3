@@ -16,6 +16,7 @@ public abstract class Jugador  {
 	public float precio;
 	public int goles; 
 	public int puntaje;
+	
 	public List<Dream_Team> Dream_teams= new ArrayList<Dream_Team>();  
 	public List<Penalties> penalties= new ArrayList<Penalties>();
 	 
@@ -24,6 +25,8 @@ public abstract class Jugador  {
 	public boolean enough; // Dice sí jugó suficente en el partido más reciente 
 	public boolean plus_60; // Dice si jugó más de 60 minutos en el último partido
 	
+	public int more; 
+	public int seguido;
 	
 	public Equipo real; //nuevo
 	
@@ -32,12 +35,14 @@ public abstract class Jugador  {
 	
 	public Jugador(String nombre, String posicion, float precio, Equipo real) {
 		
-		Nombre = nombre;
-		Posicion = posicion;
-		this.precio = precio;
-		this.real = real;
-		this.goles= 0; 
-		this.puntaje= 0;
+		this.Nombre   = nombre;
+		this.Posicion = posicion;
+		this.precio   = precio;
+		this.real     = real;
+		this.goles    = 0; 
+		this.puntaje  = 0;
+		this.more     = 0;
+		this.seguido  = 0;
 	}
 	
 	public List<Penalties> getPenalties() {
@@ -55,6 +60,7 @@ public abstract class Jugador  {
 	public boolean isPlus_60() {
 		return plus_60;
 	}
+	
 	public Equipo getReal() {
 		return real;
 	}
@@ -101,21 +107,32 @@ public abstract class Jugador  {
 	{
 		this.reportes_previos.add(this.reporte);
 		this.reporte= report;
+		
+		if(this.reporte.getGoles_scored()>0) {
+			this.seguido++;
+			
+		}else {
+			this.seguido=0;
+		}
+		
 		if (Math.abs(this.reporte.min_salida-this.reporte.min_entrada) > 1  || this.reporte.completo) 
 		{
 			this.enough = true ;
 			if (Math.abs(this.reporte.min_salida-this.reporte.min_entrada) > 60) 
 			{
 				this.plus_60= true;
+				this.more++;
 			}else 
 			{
 				this.plus_60 = false;
-				}
+				this.more=0;
+			}
 		}
 		else
 		{
-		this.enough= false; 
-		this.plus_60= false;
+			this.enough= false; 
+			this.plus_60= false;
+			this.more=0;
 		}
 	}
 	

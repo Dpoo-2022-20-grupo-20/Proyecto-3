@@ -32,12 +32,22 @@ public class Mediocampista extends Jugador{
 		{
 			nuevo_punt+=1;
 		}
-		nuevo_punt+= this.reporte.goles_scored*5;
-		nuevo_punt+= this.reporte.asistencias *3;
-		nuevo_punt+= this.reporte.auto_goles*-2;  
-		nuevo_punt+= this.reporte.tarjetas_amarillas*-1;
-		nuevo_punt+= this.reporte.Penalty.Fallados *-2;
-		nuevo_punt+= this.reporte.tarjetas_rojas*-3; 
+		nuevo_punt+= this.reporte.getGoles_scored()*5;
+		nuevo_punt+= this.reporte.getAsistencias() *3;
+		nuevo_punt+= this.reporte.getAuto_goles()*-2;  
+		nuevo_punt+= this.reporte.getTarjetas_amarillas()*-1;
+		nuevo_punt+= this.reporte.getPenalty().getFallados() *-2;
+		nuevo_punt+= this.reporte.getTarjetas_rojas()*-3; 
+		nuevo_punt+= this.reporte.getManos()*-1;
+		nuevo_punt+= this.reporte.getTiros_libres()*1;
+		nuevo_punt+= this.reporte.getLibres_metidos()*2;
+		if(this.seguido>3) {
+			nuevo_punt+=10;
+		}
+		if(this.more>5) {
+			nuevo_punt+=5;
+			this.more=0;
+		}
 	}
 	this.puntaje += nuevo_punt;
 	return nuevo_punt;

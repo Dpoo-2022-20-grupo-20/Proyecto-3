@@ -30,14 +30,25 @@ public class Arquero extends Jugador{
 			{
 				nuevo_punt+=1;
 			}
-			nuevo_punt+= this.reporte.goles_scored*6 ;
-			nuevo_punt+= this.reporte.asistencias *3;
-			if(this.reporte.goles_recibidos==0) {nuevo_punt += 3;} 
-			nuevo_punt+= this.reporte.auto_goles*-2;  
-			nuevo_punt+= this.reporte.tarjetas_amarillas*-1;
-			nuevo_punt+= this.reporte.Penalty.Fallados *-2;
-			if(this.reporte.Penalty.detenido >0 ) {nuevo_punt+= 5;}
-			nuevo_punt+= this.reporte.tarjetas_rojas*-3; 
+			nuevo_punt+= this.reporte.getGoles_scored()*6 ;
+			nuevo_punt+= this.reporte.getAsistencias() *3;
+			if(this.reporte.getGoles_recibidos()==0) {nuevo_punt += 3;} 
+			nuevo_punt+= this.reporte.getAuto_goles()*-2;  
+			nuevo_punt+= this.reporte.getTarjetas_amarillas()*-1;
+			nuevo_punt+= this.reporte.getPenalty().getFallados() *-2;
+			if(this.reporte.getPenalty().getDetenido() >0 ) {nuevo_punt+= 5;}
+			
+			nuevo_punt+= this.reporte.getTarjetas_rojas()*-3; 
+			nuevo_punt+= this.reporte.getManos()*-1;
+			nuevo_punt+= this.reporte.getTiros_libres()*1;
+			nuevo_punt+= this.reporte.getLibres_metidos()*2;
+			if(this.seguido>3) {
+				nuevo_punt+=10;
+			}
+			if(this.more>5) {
+				nuevo_punt+=5;
+				this.more=0;
+			}
 		}
 		this.puntaje += nuevo_punt;
 		return nuevo_punt;
