@@ -88,9 +88,12 @@ public class Jprincipal extends Frames implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 						
-			if (e.getSource()== this.Logadmin ) {info(0);}
-			else if (e.getSource()== this.Loguser) {this.info(1);}
-			else if (e.getSource()==this.Reguser) {this.info(2);}
+			if (e.getSource()== this.Logadmin ) {info(0);
+			this.resize(1419,1068);}
+			else if (e.getSource()== this.Loguser) {this.info(1);
+			this.resize(1419,1068);}
+			else if (e.getSource()==this.Reguser) {this.info(2);
+			this.resize(1419,1068);}
 			else if (e.getSource()== this.confirmar) {
 				System.out.println("adasdnaspdçásd");
 				int act = Integer.parseInt( confirmar.getActionCommand());

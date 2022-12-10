@@ -93,7 +93,11 @@ public class Users_menu extends Frames implements ActionListener{
 		{this.dispose();
 		 new team_Sel();}
 		else if(e.getSource()== this.datos)
-		{}
+		{
+			this.dispose();
+			new Graficas();
+			
+		}
 		else if (e.getSource()== this.fun) {}
 		else if (e.getSource()== this.pasadas) {}
 		else if (e.getSource()== this.cerrar) {this.prev();}

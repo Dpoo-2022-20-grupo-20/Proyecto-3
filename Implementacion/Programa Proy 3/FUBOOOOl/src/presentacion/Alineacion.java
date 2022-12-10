@@ -390,7 +390,7 @@ public class Alineacion extends Frames implements ActionListener {
 		 this.nay.setBackground(Color.BLACK);
 		 this.nay.setForeground(new Color(0x7CE515));
 		 this.nay.setBorder(BorderFactory.createEmptyBorder());
-		 this.goo.setText("Cconfimar");
+		 this.goo.setText("Confimar");
 		 this.goo.setFocusable(false);
 	     this.goo.addActionListener(this);
 		 this.goo.setFont(new Font("Araboto Bold",Font.BOLD,30));
