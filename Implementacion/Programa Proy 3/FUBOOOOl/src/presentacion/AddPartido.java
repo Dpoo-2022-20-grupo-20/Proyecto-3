@@ -79,7 +79,7 @@ public class AddPartido extends Frames implements ActionListener {
 				
 				}
 			catch(Exception err) {
-				JOptionPane.showMessageDialog(null, "Hubo un error leyendo el archivo ", "Error", JOptionPane.ERROR_MESSAGE,this.err);
+				JOptionPane.showMessageDialog(null, err.getMessage(), "Error", JOptionPane.ERROR_MESSAGE,this.err);
 				err.printStackTrace();
 			}
 			}

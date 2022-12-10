@@ -10,25 +10,7 @@ import Liga_Real.Reporte_Partido;
 // Implementación atributos y geters y setter, cambio a clase abstracta 
 public abstract class Jugador  {
 	
-	public List<Penalties> getPenalties() {
-		return penalties;
-	}
-	public List<Reporte_Partido> getReportes_previos() {
-		return reportes_previos;
-	}
-	public Reporte_Partido getReporte() {
-		return reporte;
-	}
-	public boolean isEnough() {
-		return enough;
-	}
-	public boolean isPlus_60() {
-		return plus_60;
-	}
-	public Equipo getReal() {
-		return real;
-	}
-
+	
 	public String Nombre;
 	public String Posicion; 
 	public float precio;
@@ -57,6 +39,27 @@ public abstract class Jugador  {
 		this.goles= 0; 
 		this.puntaje= 0;
 	}
+	
+	public List<Penalties> getPenalties() {
+		return penalties;
+	}
+	public List<Reporte_Partido> getReportes_previos() {
+		return reportes_previos;
+	}
+	public Reporte_Partido getReporte() {
+		return reporte;
+	}
+	public boolean isEnough() {
+		return enough;
+	}
+	public boolean isPlus_60() {
+		return plus_60;
+	}
+	public Equipo getReal() {
+		return real;
+	}
+
+	
 	// Geters Y setters 
 	public String getNombre() {
 		return Nombre;

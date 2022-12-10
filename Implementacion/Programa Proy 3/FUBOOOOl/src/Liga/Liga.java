@@ -55,7 +55,26 @@ public final class Liga {
 		return jugadores;
 	}
 	
+	public static void adReales(String nombre1, Equipo eq) {
+		reales.put(nombre1, eq);
+	}
+	
+	
+	public static Jugador get_jug(String nombre) {
+		return jugadores_sin.get(nombre);		
+	} 
+	
+	public static Equipo get_real(String nombre)throws Error {
+		try {
+			return reales.get(nombre);
+		}
+		catch (Error e){
+			Error err= new Error("No existe el equipo");
+			throw err;
+		}
 		
+	}
+	
 	public static TreeMap<Integer, List<Dream_Team>> getPosiciones() {
 		return Posiciones;
 	}

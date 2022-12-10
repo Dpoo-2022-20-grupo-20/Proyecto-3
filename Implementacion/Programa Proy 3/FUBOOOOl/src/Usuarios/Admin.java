@@ -113,7 +113,7 @@ public class Admin extends Usuario{
 				while(linea!=null){
 					nombre1= linea.replace("\n","");
 					Equipo eq = new Equipo(nombre1);
-					Liga.reales.put(nombre1, eq);
+					Liga.adReales(nombre1, eq);
 					linea=br.readLine();		
 				}
 				br.close();
@@ -208,7 +208,7 @@ public class Admin extends Usuario{
 		}
 	}
 	// falta leer el csv pero ya añade los partidos 
-	public void create_match(String ruta) throws IOException 
+	public Map<String,Object> create_match(String ruta) throws Error, IOException
 	{
 		Map<String, Jugador> Jugadores = Liga.jugadores_sin;
 		Map<String, Equipo > Real= Liga.reales;
@@ -218,8 +218,183 @@ public class Admin extends Usuario{
 		BufferedReader br;
 		br = new BufferedReader(new FileReader(file));
 		String linea;
+		Map<String,Object> data = new HashMap<String,Object>();
+		
+		String[] keys= {"alineacionlocal","alineacionvisitante","goleslocal","golesvisitante",
+				"autogolocal","autogolvisitante","asistenciaslocal","asistenciasvisitante",
+				"tajetasamarillaslocal","tajetasamarillasvistiante","tajetasrojaslocal","tajetasrojasvisitante",
+				"penaltiesmarcadoslocal","penaltiesmarcadosvisitante","penaltiesatajadoslocal","penaltiesatajadosvisitante",
+				"penaltieserradoslocal","penaltieserradosvisitante","penaltiesnoatajadoslocal",
+				"penaltiesnoatajadosvisitante","sustituciónlocal","sustituciónvisitante","manoslocal","manosvisitante",
+				"tirosLibrelocal","tirosLibrevisitante"};
+		
+		try {
+			linea= br.readLine();
+			String[]date= linea.split(",");
+			data.put("date",date[1]);
+			data.put("duration", date[2]);
+			linea= br.readLine();
+			String[]team= linea.split(",");
+			data.put("local", team[0]);
+			data.put("visitante", team[1]);
+			linea= br.readLine();
+			for(String key : keys) {
+				System.out.println(key);
+				List<String> add = new ArrayList<String>();
+				if (linea.equals("0")) {
+					data.put(key, add);
+				}
+				else {
+					String[] previo= linea.split(",");
+					
+					for(String dat: previo) {
+						add.add(dat);
+					}
+					data.put(key,add);
+				}
+				
+				linea= br.readLine();
+			}
+			return data;
+		}
+		catch (Error e) {
+			Error erro= new Error("El acrhivo no tiene el formato debido");
+			throw erro;
+		}
+		finally {
+			
+			br.close();}
+		}	
 	
-		linea= br.readLine();
+	
+	
+	public void agregar_info(Map<String,Object>data) throws Error
+	{
+		
+		try {
+		String local=(String) data.get("local");
+		String visitante= (String) data.get("visitante");
+		String fecha= (String) data.get("date");
+		
+		
+		Equipo Loc = Liga.get_real(local);
+        Equipo Visi = Liga.get_real(visitante);
+        int goles_visitante= ((List<String>) data.get("golesvisitante")).size();
+        int goles_local    = ((List<String>) data.get("goleslocal")).size();
+        
+        Partidos match = new Partidos(goles_visitante, goles_local, Visi,Loc,fecha);
+        
+        this.aln(Loc.Jugadores, data, "local", match);
+        this.aln(Visi.Jugadores, data, "visitante", match);
+      		
+        }
+		catch(Error e){
+			Error err = new Error("NO se encuentran bien los datos");
+		}
+	}
+        
+        
+        private void aln(List<Jugador>al_loc,Map<String,Object>data,String loc,Partidos match) throws Error {
+        	
+        	int goles_visitante= ((List<String>) data.get("golesvisitante")).size();
+            String fecha= (String) data.get("date");
+            float  duracion= Float.parseFloat((String) data.get("duration"))  ;
+            
+        	for(Jugador jug: al_loc) {
+            	
+            	int fallados= contar((List<String>)data.get("penaltieserrados"+loc),jug.getNombre());
+            	int Anotados= contar((List<String>)data.get("penaltiesmarcados"+loc),jug.getNombre());
+            	int no_atj  = contar((List<String>)data.get("penaltiesnoatajados"+loc),jug.getNombre());
+            	int detenido= contar((List<String>)data.get("penaltiesatajados"+loc),jug.getNombre());
+            	        	
+            	Penalties penalt = new Penalties(fallados,Anotados,no_atj,detenido);
+                
+            	
+            	int amarillas = contar((List<String>)data.get("tajetasamarillas"+loc),jug.getNombre());
+            	int rojas = contar((List<String>)data.get("tajetasrojas"+loc),jug.getNombre());
+            	int goles = contar((List<String>)data.get("goles"+loc),jug.getNombre());
+            	int auto  = contar((List<String>)data.get("autogo"+loc),jug.getNombre());
+            	int asis  = contar((List<String>)data.get("asistencias"+loc),jug.getNombre());
+            	int manos = contar((List<String>)data.get("manos"+loc),jug.getNombre());
+            	
+            	int libre= 0 ;
+            	int metidos= 0; 
+            	
+            	for(String yer:(List<String>)data.get("tirosLibre"+loc)  ) {
+            		String[] libe =yer.split("/");
+            		if(libe[0].equals(jug.getNombre())){
+            			libre++;
+            			if(libe[1].equals("Y")) {
+            				metidos++;
+            			}
+            		}
+            	}
+            	boolean completo= true; 
+            	
+            	List<String>al_loca= (List<String>) data.get("alineacion"+loc);
+                float entrar=0 ;
+            	
+                float salida = duracion;
+            	for(String per: (List<String>)data.get("sustitución"+loc) ) {
+            		
+            		String[] go=per.replace("(", "").replace(")","").split("/");
+            		
+            		if(al_loca.contains(jug.Nombre)) {
+            			if(go[0].equals(jug.getNombre())) {
+                			completo= false;
+                			salida= Float.parseFloat(go[2]);
+                			
+                		}
+            		}else {
+            			completo= false;
+            			if(go[1].equals(jug.getNombre())) {
+                			entrar= Float.parseFloat(go[2]);
+                			
+                		}else {
+                			entrar=0;
+                			salida=0;
+                		}
+            		}
+            		
+            		
+            	}
+            	
+            	Reporte_Partido reporte = new Reporte_Partido(jug,entrar,salida,amarillas
+                        ,rojas,goles,goles_visitante,auto,fecha,completo,asis,match,penalt,libre,metidos,manos);
+
+                jug.nuevo_reporte(reporte);
+                jug.add_penalty(penalt);
+        }
+        		
+	}
+	
+        
+    public void fin_fecha() 
+    {
+      Liga.actualizar(); 
+    }
+        
+        
+        
+        
+	private int contar(List<String>list,String er) {
+		int cont=0;
+		if(list!= null) {
+		for(Object ar:list) {
+			if(er.equals(ar)) {
+				cont++;
+			}
+		}
+		}
+		return cont; 
+	}
+
+}
+		
+		
+		
+		
+		/*linea= br.readLine();
 		linea= br.readLine();
 		linea= br.readLine();
 		linea= br.readLine();
@@ -355,48 +530,7 @@ public class Admin extends Usuario{
 	}
 	
 	
-	public void agregar_info(Jugador jug, String fecha, Partidos match, boolean completo, boolean entro, int minuto, int duracion,
-			String [] amarillass, String [] rojass, String [] goless, int gol_recibidos, String [] autogoless, String [] asistencias,
-			String [] falladoss,String [] anotadoss,String [] noatajadoss,String [] detenidoss) 
-	{
-	float entrar;
-	float salida;
-	if (completo)
-	{ 
-		 entrar=-1;
-         salida=-1;
-	}
-	else if (entro)
-	{
-		entrar=minuto;
-		salida=duracion;
-	}
-	else {
-		entrar=0;
-		salida=minuto;
-	}
 	
-	String nombre=jug.Nombre;
-        int amarillas=(amarillass==(null))?0:contar(amarillass,nombre);
-        int rojas =(rojass==(null))?0:contar(rojass,nombre);
-        int goles =(goless==(null))?0:contar(goless,nombre); 
-        int auto=(autogoless==(null))?0:contar(autogoless,nombre); 
-        int asis=(asistencias==(null))?0:contar(asistencias,nombre);
-        // Penalties 
-        
-        int fallados=(falladoss==(null))?0:contar(falladoss,nombre);
-        int Anotados=(anotadoss==(null))?0:contar(anotadoss,nombre);
-        int no_atj =(noatajadoss==(null))?0:contar(noatajadoss,nombre);
-        int detenido=(detenidoss==(null))?0:contar(detenidoss,nombre);
-
-        Penalties penalt = new Penalties(fallados,Anotados,no_atj,detenido);
-        Reporte_Partido reporte = new Reporte_Partido(jug,entrar,salida,amarillas
-                ,rojas,goles,gol_recibidos,auto,fecha,asis,match,penalt,completo);
-
-        jug.nuevo_reporte(reporte);
-        jug.add_penalty(penalt);	
-		
-	}
 	public int contar(String [] ar, String jugg ) { 
 	 int contador = 0;
 	 for (int i = 0; i < ar.length; i++) {
@@ -407,9 +541,6 @@ public class Admin extends Usuario{
 	 return contador;
 	 }
 	
-	public void fin_fecha() 
-	{
-		Liga.actualizar(); 
-	}
+	
 }
-
+*/

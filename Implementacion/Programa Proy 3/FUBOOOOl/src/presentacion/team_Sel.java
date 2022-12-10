@@ -98,11 +98,12 @@ public class team_Sel extends Frames implements ActionListener{
 		
 		this.chose.setAlignmentX(CENTER_ALIGNMENT);
 		this.chose.setAlignmentY(CENTER_ALIGNMENT);
-		this.chose.setHorizontalTextPosition(JLabel.CENTER);
-		this.panel.add(this.chose);
+		this.chose.setHorizontalTextPosition(JLabel.RIGHT);
+		//
 		this.panel.add(this.team1);
 		this.panel.add(this.team2);
 		this.panel.setVisible(true);
+		this.panel.add(this.chose);
 		this.add(this.panel,BorderLayout.CENTER);
 	}
 	

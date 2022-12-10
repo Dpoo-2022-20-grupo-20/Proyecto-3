@@ -20,14 +20,18 @@ public class Reporte_Partido {
 	public int asistencias;
 	public Partidos Partido; 
 	public Penalties Penalty; 
+	public int tiros_libres;
+	public int libres_metidos;
+	public int manos; 
 	
 	
+
+
 
 	public Reporte_Partido(Jugador jugador, float min_entrada, float min_salida, int tarjetas_amarillas,
-			int tarjetas_rojas, int goles_scored, int goles_recibidos, int auto_goles, String date, int asistencias,
-			Partidos partido, Penalties penalty,boolean completo) 
-	{
-
+			int tarjetas_rojas, int goles_scored, int goles_recibidos, int auto_goles, String date, boolean completo,
+			int asistencias, Partidos partido, Penalties penalty, int tiros_libres, int libres_metidos, int manos) {
+		
 		this.jugador = jugador;
 		this.min_entrada = min_entrada;
 		this.min_salida = min_salida;
@@ -37,10 +41,13 @@ public class Reporte_Partido {
 		this.goles_recibidos = goles_recibidos;
 		this.auto_goles = auto_goles;
 		this.date = date;
+		this.completo = completo;
 		this.asistencias = asistencias;
-		Partido = partido; 
+		Partido = partido;
 		Penalty = penalty;
-		this.completo=completo;
+		this.tiros_libres = tiros_libres;
+		this.libres_metidos = libres_metidos;
+		this.manos = manos;
 	}
 
 	// Ojo si nunca sale, esto peta, toca revizar como manejar eso 

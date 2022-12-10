@@ -1,0 +1,28 @@
+Matchday,date,duration
+local,visitante
+alineacionlocal
+alineacionvisitante
+goleslocal(jugador)
+golesvisitante(jugador)
+autogolocal
+autogolvisitante
+asistenciaslocal(jugador)
+asistenciasvisitante(jugador)
+tajetasamarillaslocal(jugador)
+tajetasamarillasvistiante(jugador),
+tajetasrojaslocal(jugador)
+tajetasrojasvisitante(jugador)
+penaltiesmarcadoslocal
+penaltiesmarcadosvisitante
+penaltiesatajadoslocal
+penaltiesatajadosvisitante
+penaltieserradoslocal
+penaltieserradosvisitante
+penaltiesnoatajadoslocal
+penaltiesnoatajadosvisitante
+sustituciónlocal(entra/sale/minuto)
+sustituciónvisitante(entra/sale/minuto)
+manoslocal
+manosvisitante
+tirosLibreLocal(N errado, Y metidio)
+tirosLibreVisitante(N errado, Y metidio

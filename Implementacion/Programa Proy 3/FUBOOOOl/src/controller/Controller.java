@@ -58,7 +58,7 @@ public class Controller  {
 		return this.app.get_id_team();
 	}
 	
-	public void cargarPartida(String Ruta) throws IOException {
+	public void cargarPartida(String Ruta) throws IOException,Error {
 		this.app.cargarPartidos(Ruta);
 	}
 	

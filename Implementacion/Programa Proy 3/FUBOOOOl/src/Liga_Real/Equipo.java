@@ -14,18 +14,42 @@ public class Equipo
 	public Map<String,Jugador> Map_Jugadores = new HashMap<String,Jugador>(); // Nuevooo
     public String Nombre; 
 	public int Partidos_Jugados;
+	public int ganados;
+	public int perdidos;
+	public int empatados; 
 	
 	public Equipo( String nombre) {
 		
-		Jugadores = new ArrayList<Jugador>();
-		Nombre = nombre;
-		Partidos_Jugados = 0;
+		this.Jugadores = new ArrayList<Jugador>();
+		this.Nombre = nombre;
+		this.Partidos_Jugados = 0;
+		this.ganados=0;
+		this.perdidos=0;
+		this.empatados=0;
 	} 
 	
 	public void Add_partido() 
 	{
 		this.Partidos_Jugados ++ ; 
 	}
+	
+	
+	public void Add_empate() 
+	{
+		this.empatados ++ ; 
+	}
+	
+	
+	public void Add_win() 
+	{
+		this.ganados ++ ; 
+	}
+	
+	public void Add_loss() 
+	{
+		this.Partidos_Jugados ++ ; 
+	}
+	
 	
 	public void add_Player(Jugador player) 
 	{

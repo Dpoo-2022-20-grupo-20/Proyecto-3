@@ -1,6 +1,7 @@
 package Usuarios;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -141,8 +142,10 @@ public class App extends Observable
 		return this.actual.pos_disp();
 	}
 	
-	public void cargarPartidos(String ruta) throws IOException {
-		this.jefe.create_match(ruta);
+	public void cargarPartidos(String ruta) throws Error, IOException {
+		
+		Map<String, Object> data = this.jefe.create_match(ruta);
+		this.jefe.agregar_info(data);
 	}
 	
 	public float get_presupuesto() {
