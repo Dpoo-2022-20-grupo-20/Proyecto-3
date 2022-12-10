@@ -1,4 +1,4 @@
-package presentacion;
+ package presentacion;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -80,7 +80,6 @@ public class Admin_menu extends Frames implements ActionListener {
 		if (e.getSource()==this.partido) {
 			this.dispose();
 			new AddPartido();
-			
 		}
 	}
 

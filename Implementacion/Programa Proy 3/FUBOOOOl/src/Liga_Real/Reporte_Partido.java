@@ -58,6 +58,70 @@ public class Reporte_Partido {
 		return game;
 	}
 	
+	public Jugador getJugador() {
+		return jugador;
+	}
+
+	public float getMin_entrada() {
+		return min_entrada;
+	}
+
+	public float getMin_salida() {
+		return min_salida;
+	}
+
+	public int getTarjetas_amarillas() {
+		return tarjetas_amarillas;
+	}
+
+	public int getTarjetas_rojas() {
+		return tarjetas_rojas;
+	}
+
+	public int getGoles_scored() {
+		return goles_scored;
+	}
+
+	public int getGoles_recibidos() {
+		return goles_recibidos;
+	}
+
+	public int getAuto_goles() {
+		return auto_goles;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public boolean isCompleto() {
+		return completo;
+	}
+
+	public int getAsistencias() {
+		return asistencias;
+	}
+
+	public Partidos getPartido() {
+		return Partido;
+	}
+
+	public Penalties getPenalty() {
+		return Penalty;
+	}
+
+	public int getTiros_libres() {
+		return tiros_libres;
+	}
+
+	public int getLibres_metidos() {
+		return libres_metidos;
+	}
+
+	public int getManos() {
+		return manos;
+	}
+
 	public int total_tarjt()
 	{
 		int tarjt = this.tarjetas_amarillas + this.tarjetas_rojas;
