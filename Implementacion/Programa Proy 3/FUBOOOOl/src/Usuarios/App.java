@@ -33,6 +33,8 @@ public class App extends Observable
 	public App() throws IOException
 	{
 		System.out.println("adhasdasd");
+		Liga.set_up();
+		
 		Admin.add_dats();		
 		load_data();
 		admins = Admin.csvAdmin();
@@ -42,6 +44,8 @@ public class App extends Observable
 	{
 		DataManagement.csvCLiente();
 		DataManagement.csvEquipo();
+		DataManagement.csv_jugadores();
+		DataManagement.info_liga();
 	}
 		
 	public static void load_data() 
@@ -146,6 +150,7 @@ public class App extends Observable
 		
 		Map<String, Object> data = this.jefe.create_match(ruta);
 		this.jefe.agregar_info(data);
+		this.jefe.fin_fecha();
 	}
 	
 	public float get_presupuesto() {

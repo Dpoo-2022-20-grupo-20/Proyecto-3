@@ -93,7 +93,9 @@ public class Dream_Team  extends JFrame implements ActionListener{
 		return ret;
 	}
 	
-	
+	public List<Jugador> get_team() {
+		return this.Team_list;
+	}
 	
 	
 	public String getId() {
@@ -402,25 +404,50 @@ public float[] add_player(Jugador player, String Pos)
   }
   // Puede que necesite Cambios 
   // TODO 
-  public void calc_puntaje() 
+  public int calc_puntaje() 
   {	
 	Collection<List<Jugador>> playerss = this.alneacn_actual.values();
 	int i= 0 ; 
-	  
+	boolean win= true;  
+	boolean loss= true;
+	boolean all= true; 
+	int nuevo=0;
     for(List<Jugador> players : playerss) 
 	  {
 		  for (Jugador player : players) 
 		  {
+			System.out.println(player.getNombre());
+		    System.out.println(player.getPuntaje());
 			int punt = player.caluclar_puntaje();
+
 			
+			
+		    System.out.println(player.getPuntaje());
+		    System.out.println("End");
 			if (punt > 0 )
 			{
+				
+				if(!player.isPlus_60()){
+					all= false; 
+				}
+				if (!player.getReal().equals(player.getReporte().getPartido().getGanador())) 
+				{
+					win= false; 	
+					if(player.getReporte().getPartido().getGanador()!=null) {
+						loss= false; 
+					} 
+				} 
+				
+				
+				
+				nuevo+=punt;
 				this.puntaje_act += punt;
 				if (player.equals(capitan)) 
 				{
-					if (player.reporte.Partido.ganador.equals(player.real)) 
+					if (player.getReal().equals(player.getReporte().getPartido().getGanador())) 
 					{
 						this.puntaje_act += 5; 
+						nuevo+=5;
 						player.puntaje += 5; 
 					} 
 				}
@@ -435,6 +462,7 @@ public float[] add_player(Jugador player, String Pos)
 					  if (punt != 0 ) 
 					  {
 						  this.puntaje_act += punt; 
+						  nuevo+=punt;
 					      i+=90;
 					      break;
 					  }
@@ -443,6 +471,28 @@ public float[] add_player(Jugador player, String Pos)
 			}
 		 }
 	  }
+    
+    
+      if(win) {
+    	  this.puntaje_act+=15; 
+    	  nuevo+=5;
+      }
+      
+      if(loss) {
+    	  this.puntaje_act+=10;
+    	  nuevo+=10;
+      }
+      if(all) {
+    	  this.puntaje_act+=5;
+    	  nuevo+=5;
+      }
+      
+      return nuevo;
+  }
+  
+  
+  public void add_punt(int punt) {
+	  this.puntaje_act+=punt;
   }
   
   /// Respecto alineación default, pero tiene que implementarse con cerrar temporada para que pueda existir 

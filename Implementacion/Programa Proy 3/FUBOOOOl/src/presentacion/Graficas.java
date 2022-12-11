@@ -80,7 +80,7 @@ public class Graficas extends Frames implements ActionListener{
 		// TODO Auto-generated method stub
 		if (e.getSource()==this.graph1) {
 			//anadir grafico 1
-			
+						
 		}
 		else if (e.getSource()==this.graph2) {
 			//anadir grafico 2

@@ -412,6 +412,7 @@ public class Menu_Equipo extends Frames implements ActionListener {
 			this.Mi_alineacion.setEnabled(true);
 			this.Volver.setEnabled(true);
 			this.Id.setText("Su ID "+id);
+		
 			this.stats.setText("Su puntaje 0");
 			
 		}else if(e.getSource()==this.Volver) {

@@ -133,7 +133,7 @@ public class Admin extends Usuario{
 		String[] pos = "Delantero,Medio_Campista,Defensor,Arquero".split(",")  ;
 		
 		
-		String ruta = "Data/players.csv";
+		String ruta = "Data/Player_act.csv";
 		
 		File file = new File(ruta);
 		
@@ -154,20 +154,23 @@ public class Admin extends Usuario{
 			String nom= pos1[0];
 			String equipo=pos1[1];
 			
-			int presio=Integer.parseInt(pos1[3].replace(";;;;;", "").replace(" ", ""));
+			float presio=Float.parseFloat(pos1[3].replace(";;;;;", "").replace(" ", ""));
 			String posi=pos1[2];
+			int puntaje=Integer.parseInt(pos1[4]) ;
 			
 		    Equipo team= Liga.reales.get(equipo);
 			Jugador jug;
-			if (posi.equals("Forward")) 
+			if (posi.equals("Forward")||posi.equals("Delantero")) 
 			{jug= new Delantero(nom,"Delantero",presio,team); }
-			else if (posi.equals("Midfielder"))
+			else if (posi.equals("Midfielder")||posi.equals("Medio_Campista"))
 			{jug = new Mediocampista(nom,"Medio_Campista",presio,team);}
-			else if (posi.equals("Defender"))
+			else if (posi.equals("Defender")||posi.equals("Defensor"))
 			{jug= new Defensa(nom,"Defensor",presio,team);}
 			else 
 			{jug= new Arquero(nom,"Arquero",presio,team);}
-		
+			
+			jug.set_Puntaje(puntaje);
+			
 			team.Jugadores.add(jug);
 			team.Map_Jugadores.put(jug.Posicion, jug);
 			Map<String, Jugador> sin = Liga.getJugadores_sin();

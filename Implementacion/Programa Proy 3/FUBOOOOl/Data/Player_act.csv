@@ -1,0 +1,733 @@
+Nombre,Equipo,Posicion,Precio,Puntaje
+De Ligt,Juventus,Defensor,35000.0,0
+Yaremchuk,Benfica,Delantero,11000.0,0
+Bastoni,Inter,Defensor,10000.0,0
+Rakiti?,Sevilla,Medio_Campista,90000.0,0
+Yakhshiboev,Sheriff,Delantero,25000.0,0
+Navas,Paris,Arquero,68000.0,0
+Rensch,Ajax,Defensor,1000.0,0
+M�hle,Atalanta,Defensor,12000.0,0
+Tol�i,Atalanta,Defensor,10000.0,0
+Passlack,Dortmund,Medio_Campista,13000.0,0
+Addo,Sheriff,Medio_Campista,20000.0,0
+Jordi Alba,Barcelona,Defensor,40000.0,0
+Brahim D�az,Milan,Medio_Campista,30000.0,0
+San�,Bayern,Medio_Campista,78000.0,0
+Mehmet Topal,Besiktas,Medio_Campista,15000.0,0
+Ulreich,Bayern,Arquero,15000.0,0
+Reus,Dortmund,Medio_Campista,45000.0,0
+Tijani,Salzburg,Medio_Campista,10000.0,0
+Richards,Bayern,Defensor,11000.0,0
+Morato,Benfica,Defensor,12000.0,0
+Rashford,Man United,Delantero,50000.0,0
+Sabitzer,Bayern,Medio_Campista,10000.0,0
+Jord�n,Sevilla,Medio_Campista,31000.0,0
+Jovi?,Real Madrid,Delantero,25000.0,0
+Sarabia,Sporting,Delantero,30000.0,0
+Pellegrini,Juventus,Defensor,17000.0,0
+Okafor,Salzburg,Medio_Campista,25000.0,0
+Grealish,Man City,Medio_Campista,35000.0,0
+Morata,Juventus,Delantero,83000.0,0
+Kritsyuk,Zenit,Arquero,22000.0,0
+?olak,Malmo,Delantero,10000.0,0
+Romagnoli,Milan,Defensor,27000.0,0
+Shkurin,Dynamo Kyiv,Delantero,10000.0,0
+Hutchinson,Besiktas,Medio_Campista,18000.0,0
+Milner,Liverpool,Medio_Campista,13000.0,0
+F�bio Cardoso,Porto,Defensor,26000.0,0
+Griezmann,Atletico,Delantero,55000.0,0
+Carvajal,Real Madrid,Defensor,450000.0,0
+Al. Miranchuk,Atalanta,Delantero,1000.0,0
+Alc�cer,Villarreal,Delantero,16000.0,0
+Diego Carlos,Sevilla,Defensor,25000.0,0
+Elia,Young Boys,Delantero,23000.0,0
+Zabarnyi,Dynamo Kyiv,Defensor,11000.0,0
+Stepanenko,Shakhtar,Medio_Campista,17000.0,0
+Zinchenko,Man City,Defensor,15000.0,0
+Saelemaekers,Milan,Medio_Campista,22000.0,0
+Hateboer,Atalanta,Defensor,20000.0,0
+Ferran Torres,Man City,Delantero,23000.0,0
+Innocent,Malmo,Medio_Campista,11000.0,0
+Ginczek,Wolfsburg,Delantero,2000.0,0
+Gravenberch,Ajax,Medio_Campista,17000.0,0
+Athanasiadis,Sheriff,Arquero,12000.0,0
+Firmino,Liverpool,Delantero,57000.0,0
+Acu�a,Sevilla,Defensor,28000.0,0
+Elliott,Liverpool,Medio_Campista,8000.0,0
+Pyatov,Shakhtar,Arquero,16000.0,0
+Mechele,Club Brugge,Defensor,23000.0,0
+Dia,Villarreal,Delantero,25000.0,0
+Hermoso,Atletico,Defensor,11000.0,0
+Szcz?sny,Juventus,Arquero,30000.0,0
+Azpilicueta,Chelsea,Defensor,35000.0,0
+Dost,Club Brugge,Delantero,12000.0,0
+Kudus,Ajax,Medio_Campista,12000.0,0
+Kova?i?,Chelsea,Medio_Campista,35000.0,0
+Syrota,Dynamo Kyiv,Defensor,17000.0,0
+Tet�,Shakhtar,Delantero,18000.0,0
+Hakimi,Paris,Defensor,61000.0,0
+Miretti,Juventus,Medio_Campista,5000.0,0
+Fernando,Shakhtar,Delantero,19000.0,0
+Paulo Bernardo,Benfica,Medio_Campista,14000.0,0
+Suso,Sevilla,Delantero,32000.0,0
+Pjani?,Besiktas,Medio_Campista,26000.0,0
+Olmo,Leipzig,Delantero,19000.0,0
+Carrasco,Atletico,Medio_Campista,35000.0,0
+Henderson,Man United,Arquero,25000.0,0
+Sulejmani,Young Boys,Medio_Campista,9000.0,0
+Coquelin,Villarreal,Medio_Campista,26000.0,0
+Upamecano,Bayern,Defensor,15000.0,0
+Lovren,Zenit,Defensor,20000.0,0
+Gudmundsson,LOSC,Defensor,11000.0,0
+Gerhardt,Wolfsburg,Medio_Campista,17000.0,0
+Andr� Silva,Leipzig,Delantero,25000.0,0
+Pa�ali?,Atalanta,Medio_Campista,10000.0,0
+K?dziora,Dynamo Kyiv,Defensor,14000.0,0
+Daniel Bragan�a,Sporting,Medio_Campista,17000.0,0
+Gon�alo Ramos,Benfica,Delantero,15000.0,0
+Pe�a,Villarreal,Defensor,8000.0,0
+Botman,LOSC,Defensor,350000.0,0
+Brooks,Wolfsburg,Defensor,10000.0,0
+Lauper,Young Boys,Medio_Campista,18000.0,0
+Felipe,Atletico,Defensor,11000.0,0
+Taylor,Ajax,Medio_Campista,13000.0,0
+Kondogbia,Atletico,Medio_Campista,16000.0,0
+Mendy,Real Madrid,Defensor,62000.0,0
+Tymchyk,Dynamo Kyiv,Defensor,15000.0,0
+Ceballos,Real Madrid,Medio_Campista,21000.0,0
+Fati,Barcelona,Delantero,30000.0,0
+Rafa Mir,Sevilla,Delantero,45000.0,0
+Ocampos,Sevilla,Delantero,35000.0,0
+Yansan�,Sheriff,Delantero,26000.0,0
+Jovane Cabral,Sporting,Delantero,11000.0,0
+Jo�o Cancelo,Man City,Defensor,20000.0,0
+Capaldo,Salzburg,Medio_Campista,26000.0,0
+Sierro,Young Boys,Medio_Campista,22000.0,0
+Lednev,Dynamo Kyiv,Medio_Campista,12000.0,0
+Bondar,Shakhtar,Defensor,17000.0,0
+S. Thill,Sheriff,Medio_Campista,25000.0,0
+Tsygankov,Dynamo Kyiv,Medio_Campista,11000.0,0
+Klaassen,Ajax,Medio_Campista,12000.0,0
+Cavani,Man United,Delantero,50000.0,0
+Kepa,Chelsea,Arquero,25000.0,0
+Maier,Young Boys,Medio_Campista,3000.0,0
+Cuadrado,Juventus,Medio_Campista,33000.0,0
+Wijnaldum,Paris,Medio_Campista,62000.0,0
+Gnabry,Bayern,Delantero,45000.0,0
+Konat�,Liverpool,Defensor,35000.0,0
+Moriba,Leipzig,Medio_Campista,10000.0,0
+Bentancur,Juventus,Medio_Campista,26000.0,0
+Elanga,Man United,Delantero,24000.0,0
+Kobel,Dortmund,Arquero,11000.0,0
+Gon�alo In�cio,Sporting,Defensor,15000.0,0
+Burak Y?lmaz,LOSC,Delantero,13000.0,0
+Salah,Liverpool,Delantero,150000.0,0
+Kanga,Young Boys,Delantero,12000.0,0
+Supryaha,Dynamo Kyiv,Delantero,17000.0,0
+Laimer,Leipzig,Medio_Campista,18000.0,0
+Krugovoi,Zenit,Defensor,10000.0,0
+Lihadji,LOSC,Delantero,10000.0,0
+Blind,Ajax,Defensor,11000.0,0
+Bennacer,Milan,Medio_Campista,29000.0,0
+R�ben Vinagre,Sporting,Defensor,17000.0,0
+Ranocchia,Inter,Defensor,23000.0,0
+Bailly,Man United,Defensor,20000.0,0
+Pizzi,Benfica,Medio_Campista,15000.0,0
+Seferovi?,Benfica,Delantero,14000.0,0
+Dzyuba,Zenit,Delantero,20000.0,0
+�lvarez,Ajax,Medio_Campista,13000.0,0
+Tigges,Dortmund,Delantero,15000.0,0
+Chiellini,Juventus,Defensor,34000.0,0
+Muriel,Atalanta,Delantero,35000.0,0
+Diallo,Paris,Defensor,40000.0,0
+�scar Rodr�guez,Sevilla,Medio_Campista,15000.0,0
+N'Koudou,Besiktas,Medio_Campista,20000.0,0
+Roussillon,Wolfsburg,Defensor,20000.0,0
+Zeki �elik,LOSC,Defensor,12000.0,0
+Simakan,Leipzig,Defensor,13000.0,0
+Ak�,Man City,Defensor,25000.0,0
+Verissimo,Benfica,Defensor,20000.0,0
+Stones,Man City,Defensor,19000.0,0
+Zapata,Atalanta,Delantero,25000.0,0
+Pogba,Man United,Medio_Campista,45000.0,0
+Shoretire,Man United,Delantero,5000.0,0
+Chistiakov,Zenit,Defensor,23000.0,0
+Casemiro,Real Madrid,Medio_Campista,95000.0,0
+Sobol,Club Brugge,Defensor,19000.0,0
+Pedraza,Villarreal,Medio_Campista,27000.0,0
+Diogo Jota,Liverpool,Delantero,28000.0,0
+Sarr,Chelsea,Defensor,9000.0,0
+Jorginho,Chelsea,Medio_Campista,46000.0,0
+Xeka,LOSC,Medio_Campista,18000.0,0
+Gavi,Barcelona,Medio_Campista,20000.0,0
+Reinier,Dortmund,Delantero,18000.0,0
+McKennie,Juventus,Medio_Campista,20000.0,0
+Vranckx,Wolfsburg,Medio_Campista,10000.0,0
+Vin�cius J�nior,Real Madrid,Delantero,120000.0,0
+Benzema,Real Madrid,Delantero,150000.0,0
+Lacroix,Wolfsburg,Defensor,15000.0,0
+Aebischer,Young Boys,Medio_Campista,20000.0,0
+Rebi?,Milan,Delantero,12000.0,0
+Rulli,Villarreal,Arquero,30000.0,0
+Eile,Malmo,Defensor,3000.0,0
+Oxlade-Chamberlain,Liverpool,Medio_Campista,12000.0,0
+Nikolov,Sheriff,Medio_Campista,27000.0,0
+Bakayoko,Milan,Medio_Campista,10000.0,0
+�imi?,Salzburg,Delantero,8000.0,0
+Marcos Ant�nio,Shakhtar,Medio_Campista,12000.0,0
+Arboleda,Sheriff,Defensor,15000.0,0
+Davies,Bayern,Medio_Campista,25000.0,0
+Kristensen,Salzburg,Defensor,25000.0,0
+Ram�rez,Dynamo Kyiv,Delantero,18000.0,0
+Dulanto,Sheriff,Defensor,12000.0,0
+Kruni?,Milan,Medio_Campista,25000.0,0
+Bellingham,Dortmund,Medio_Campista,10000.0,0
+Diogo Costa,Porto,Arquero,20000.0,0
+Bruno Tabata,Sporting,Medio_Campista,15000.0,0
+Diawara,Malmo,Arquero,8000.0,0
+Marcos Llorente,Atletico,Medio_Campista,25000.0,0
+Lenglet,Barcelona,Defensor,10000.0,0
+Nanasi,Malmo,Delantero,7000.0,0
+Piqu�,Barcelona,Defensor,20000.0,0
+Ricardo Esgaio,Sporting,Defensor,17000.0,0
+Vlachodimos,Benfica,Arquero,10000.0,0
+Bonnah,Leipzig,Defensor,5000.0,0
+Christiansen,Malmo,Medio_Campista,11000.0,0
+Varane,Man United,Defensor,40000.0,0
+Messi,Paris,Delantero,250000.0,0
+Francisco Concei��o,Porto,Delantero,12000.0,0
+De Ketelaere,Club Brugge,Delantero,19000.0,0
+Andriyevskiy,Dynamo Kyiv,Medio_Campista,10000.0,0
+Matheus Reis,Sporting,Defensor,18000.0,0
+Ikon�,LOSC,Delantero,18000.0,0
+Nianzou,Bayern,Defensor,9000.0,0
+Shaparenko,Dynamo Kyiv,Medio_Campista,15000.0,0
+Shaw,Man United,Defensor,20000.0,0
+Bruno,Sheriff,Delantero,25000.0,0
+Mostovoy,Zenit,Medio_Campista,13000.0,0
+Matheus Cunha,Atletico,Delantero,30000.0,0
+Schuurs,Ajax,Defensor,16000.0,0
+Thiago Silva,Chelsea,Defensor,40000.0,0
+W�ber,Salzburg,Defensor,29000.0,0
+Erokhin,Zenit,Medio_Campista,11000.0,0
+James,Chelsea,Defensor,15000.0,0
+Adamu,Salzburg,Delantero,15000.0,0
+Adams,Leipzig,Medio_Campista,14000.0,0
+Bondarenko,Shakhtar,Medio_Campista,10000.0,0
+Rafael Le�o,Milan,Delantero,38000.0,0
+Courtois,Real Madrid,Arquero,100000.0,0
+L�zaro,Benfica,Medio_Campista,10000.0,0
+Mingueza,Barcelona,Defensor,20000.0,0
+Puli�i?,Chelsea,Medio_Campista,26000.0,0
+Palmer,Man City,Medio_Campista,8000.0,0
+A. Christensen,Chelsea,Defensor,40000.0,0
+Mengi,Man United,Defensor,5000.0,0
+Lemar,Atletico,Medio_Campista,15000.0,0
+Bernardo,Salzburg,Defensor,16000.0,0
+Vrsaljko,Atletico,Defensor,17000.0,0
+Ag�ero,Barcelona,Delantero,48000.0,0
+Choupo-Moting,Bayern,Medio_Campista,13000.0,0
+Matviyenko,Shakhtar,Defensor,20000.0,0
+Pedro Porro,Sporting,Defensor,23000.0,0
+Goretzka,Bayern,Medio_Campista,35000.0,0
+Palomino,Atalanta,Defensor,16000.0,0
+Hendry,Club Brugge,Defensor,20000.0,0
+Zakaria,Juventus,Medio_Campista,10000.0,0
+Bornauw,Wolfsburg,Defensor,18000.0,0
+Lewicki,Malmo,Medio_Campista,5000.0,0
+Rieder,Young Boys,Medio_Campista,25000.0,0
+Chalobah,Chelsea,Defensor,10000.0,0
+Akanji,Dortmund,Defensor,11000.0,0
+Kant�,Chelsea,Medio_Campista,55000.0,0
+Nacho,Real Madrid,Defensor,45000.0,0
+Ter Stegen,Barcelona,Arquero,60000.0,0
+Marc Roca,Bayern,Defensor,10000.0,0
+Ngamaleu,Young Boys,Medio_Campista,25000.0,0
+M�ller,Bayern,Delantero,75000.0,0
+Kj�r,Milan,Defensor,35000.0,0
+Maceiras,Young Boys,Defensor,15000.0,0
+Barella,Inter,Medio_Campista,15000.0,0
+Weigl,Benfica,Medio_Campista,18000.0,0
+Egan-Riley,Man City,Defensor,35000.0,0
+Cristiano,Sheriff,Defensor,21000.0,0
+Ricard Puig,Barcelona,Medio_Campista,10000.0,0
+Marlos,Shakhtar,Medio_Campista,18000.0,0
+Peri�i?,Inter,Medio_Campista,25000.0,0
+�liver Torres,Sevilla,Medio_Campista,31000.0,0
+Spielmann,Young Boys,Medio_Campista,10000.0,0
+Malcom,Zenit,Delantero,22000.0,0
+Walker,Man City,Defensor,20000.0,0
+D�eko,Inter,Delantero,25000.0,0
+Capoue,Villarreal,Medio_Campista,55000.0,0
+Mazraoui,Ajax,Defensor,10000.0,0
+Montero,Besiktas,Defensor,19000.0,0
+Serdar Saat�?,Besiktas,Defensor,15000.0,0
+Guindo,Salzburg,Defensor,5000.0,0
+E. Hazard,Real Madrid,Delantero,45000.0,0
+Garcia,Young Boys,Defensor,16000.0,0
+Pezzella,Atalanta,Defensor,15000.0,0
+David,LOSC,Delantero,25000.0,0
+Kound�,Sevilla,Defensor,30000.0,0
+Yusuf Yaz?c?,LOSC,Medio_Campista,11000.0,0
+Marlon,Shakhtar,Defensor,22000.0,0
+Kampl,Leipzig,Medio_Campista,19000.0,0
+Pavard,Bayern,Defensor,35000.0,0
+Pino,Villarreal,Delantero,32000.0,0
+Knauff,Dortmund,Medio_Campista,12000.0,0
+Mykolenko,Dynamo Kyiv,Defensor,12000.0,0
+Stani�i?,Bayern,Defensor,10000.0,0
+De Bruyne,Man City,Medio_Campista,65000.0,0
+G�ndo?an,Man City,Medio_Campista,27000.0,0
+Reinildo,LOSC,Defensor,22000.0,0
+Trubin,Shakhtar,Arquero,17000.0,0
+Clinton Mata,Club Brugge,Defensor,12000.0,0
+L. Nielsen,Malmo,Defensor,12000.0,0
+Mbapp�,Paris,Delantero,150000.0,0
+N��ez,Benfica,Delantero,30000.0,0
+G�mez,Sevilla,Delantero,32000.0,0
+De Pena,Dynamo Kyiv,Medio_Campista,12000.0,0
+Correa,Inter,Delantero,25000.0,0
+Luis Su�rez,Atletico,Delantero,20000.0,0
+Tomori,Milan,Defensor,38000.0,0
+Forsberg,Leipzig,Delantero,17000.0,0
+Musiala,Bayern,Medio_Campista,10000.0,0
+Morton,Liverpool,Medio_Campista,10000.0,0
+Wendell,Porto,Defensor,28000.0,0
+Vertonghen,Benfica,Defensor,12000.0,0
+Fonte,LOSC,Defensor,10000.0,0
+Van Dijk,Liverpool,Defensor,50000.0,0
+Otamendi,Benfica,Defensor,35000.0,0
+Kenan Karaman,Besiktas,Delantero,17000.0,0
+Rodrigo Ribeiro,Sporting,Delantero,500.0,0
+Alexander-Arnold,Liverpool,Defensor,48000.0,0
+Kj�rgaard,Salzburg,Medio_Campista,15000.0,0
+Haidara,Leipzig,Medio_Campista,20000.0,0
+Sutormin,Zenit,Medio_Campista,20000.0,0
+Marcano,Porto,Defensor,17000.0,0
+Bernardo Silva,Man City,Medio_Campista,50000.0,0
+Werner,Chelsea,Delantero,45000.0,0
+Nuno Santos,Sporting,Delantero,40000.0,0
+Tiago Tom�s,Sporting,Delantero,11000.0,0
+Demir,Barcelona,Delantero,13000.0,0
+Tsimikas,Liverpool,Defensor,24000.0,0
+Iqbal,Man United,Medio_Campista,3000.0,0
+Koke,Atletico,Medio_Campista,17000.0,0
+Ballo,Milan,Defensor,27000.0,0
+Mario Gaspar,Villarreal,Defensor,20000.0,0
+Savi?,Atletico,Defensor,12000.0,0
+F�bio Vieira,Porto,Medio_Campista,15000.0,0
+Angeli�o,Leipzig,Defensor,20000.0,0
+Bale,Real Madrid,Delantero,70000.0,0
+McTominay,Man United,Medio_Campista,25000.0,0
+Karavaev,Zenit,Defensor,27000.0,0
+Andr�,LOSC,Medio_Campista,18000.0,0
+Kehrer,Paris,Defensor,31000.0,0
+Van de Beek,Man United,Medio_Campista,19000.0,0
+Asensio,Real Madrid,Delantero,30000.0,0
+Matip,Liverpool,Defensor,37000.0,0
+F. de Jong,Barcelona,Medio_Campista,25000.0,0
+Ederson,Man City,Arquero,35000.0,0
+Djimsiti,Atalanta,Defensor,11000.0,0
+Nkunku,Leipzig,Medio_Campista,28000.0,0
+Baku,Wolfsburg,Medio_Campista,25000.0,0
+Buyalskiy,Dynamo Kyiv,Medio_Campista,18000.0,0
+Dina Ebimbe,Paris,Medio_Campista,56000.0,0
+Leo Jardim,LOSC,Arquero,12000.0,0
+Mahrez,Man City,Medio_Campista,55000.0,0
+McAtee,Man City,Medio_Campista,10000.0,0
+Fl�vio Nazinho,Sporting,Defensor,6000.0,0
+Pau Torres,Villarreal,Defensor,35000.0,0
+Von Ballmoos,Young Boys,Arquero,12000.0,0
+Aaronson,Salzburg,Medio_Campista,29000.0,0
+Gilberto,Benfica,Defensor,11000.0,0
+Iborra,Villarreal,Medio_Campista,2000.0,0
+Merih Demiral,Atalanta,Defensor,20000.0,0
+D�rio Essugo,Sporting,Medio_Campista,3000.0,0
+Rakitskyy,Zenit,Defensor,27000.0,0
+Locatelli,Juventus,Medio_Campista,12000.0,0
+Vlahovi?,Juventus,Delantero,14000.0,0
+L. Nmecha,Wolfsburg,Delantero,35000.0,0
+Albiol,Villarreal,Defensor,50000.0,0
+Kuznetsov,Zenit,Delantero,2000.0,0
+Dod�,Shakhtar,Defensor,10000.0,0
+Man�,Liverpool,Delantero,95000.0,0
+Montiel,Sevilla,Defensor,35000.0,0
+Sowah,Club Brugge,Delantero,10000.0,0
+Paulo Ot�vio,Wolfsburg,Defensor,16000.0,0
+Gagliardini,Inter,Medio_Campista,13000.0,0
+Lang,Club Brugge,Delantero,18000.0,0
+Korniienko,Shakhtar,Defensor,9000.0,0
+Siebatcheu,Young Boys,Delantero,30000.0,0
+Tonali,Milan,Medio_Campista,28000.0,0
+Paulinho,Sporting,Delantero,30000.0,0
+G�nok,Besiktas,Arquero,12000.0,0
+Bradari?,LOSC,Defensor,17000.0,0
+Coates,Sporting,Defensor,28000.0,0
+Bushchan,Dynamo Kyiv,Arquero,18000.0,0
+Kessie,Milan,Medio_Campista,20000.0,0
+Lukaku,Chelsea,Delantero,48000.0,0
+Julien,Sheriff,Defensor,7000.0,0
+G�khan T�re,Besiktas,Medio_Campista,15000.0,0
+Moreno,Villarreal,Defensor,28000.0,0
+Mignolet,Club Brugge,Arquero,15000.0,0
+Chukwueze,Villarreal,Medio_Campista,36000.0,0
+Azmoun,Zenit,Delantero,37000.0,0
+Fabinho,Liverpool,Medio_Campista,35000.0,0
+Ronaldo,Man United,Delantero,250000.0,0
+Oblak,Atletico,Arquero,35000.0,10
+Pep�,Porto,Delantero,8000.0,0
+Parejo,Villarreal,Medio_Campista,45000.0,0
+Dimarco,Inter,Defensor,10000.0,0
+Guilavogui,Wolfsburg,Medio_Campista,20000.0,0
+Rabiot,Juventus,Medio_Campista,27000.0,0
+Rafa Silva,Benfica,Delantero,20000.0,0
+Sergio Busquets,Barcelona,Medio_Campista,30000.0,0
+Chiesa,Juventus,Delantero,28000.0,0
+Pessina,Atalanta,Medio_Campista,13000.0,0
+Jones,Liverpool,Medio_Campista,17000.0,0
+Lewandowski,Bayern,Delantero,200000.0,0
+Alonso,Chelsea,Defensor,25000.0,0
+Junior Messias,Milan,Delantero,29000.0,0
+Wolf,Dortmund,Medio_Campista,12000.0,0
+Mati?,Man United,Medio_Campista,15000.0,0
+�e�ko,Salzburg,Delantero,23000.0,0
+Gil Dias,Benfica,Medio_Campista,12000.0,0
+Weghorst,Wolfsburg,Delantero,19000.0,0
+Tadi?,Ajax,Delantero,20000.0,0
+Paredes,Paris,Medio_Campista,35000.0,0
+Berkay Vardar,Besiktas,Medio_Campista,13000.0,0
+Dahoud,Dortmund,Medio_Campista,15000.0,0
+Rieks,Malmo,Medio_Campista,7000.0,0
+Douglas Santos,Zenit,Defensor,27000.0,0
+Maouassa,Club Brugge,Defensor,18000.0,0
+�der Milit�o,Real Madrid,Defensor,75000.0,0
+Ersin Destano?lu,Besiktas,Arquero,10000.0,0
+Coutinho,Barcelona,Delantero,28000.0,0
+Philipp,Wolfsburg,Delantero,12000.0,0
+Uribe,Porto,Medio_Campista,30000.0,0
+Miguel Guti�rrez,Real Madrid,Defensor,20000.0,0
+Fassnacht,Young Boys,Medio_Campista,18000.0,0
+Lo Celso,Villarreal,Medio_Campista,30000.0,0
+De Roon,Atalanta,Medio_Campista,24000.0,0
+De Vrij,Inter,Defensor,16000.0,0
+Kolovos,Sheriff,Medio_Campista,13000.0,0
+En-Nesyri,Sevilla,Delantero,17000.0,0
+Gruji?,Porto,Medio_Campista,27000.0,0
+Perin,Juventus,Arquero,10000.0,0
+Rugani,Juventus,Defensor,16000.0,0
+Moukoko,Dortmund,Delantero,15000.0,0
+De Winter,Juventus,Defensor,10000.0,0
+Ronald Ara�jo,Barcelona,Defensor,21000.0,0
+Everton,Benfica,Delantero,20000.0,0
+Garmash,Dynamo Kyiv,Medio_Campista,10000.0,0
+K�hn,Salzburg,Arquero,20000.0,0
+Antony,Ajax,Delantero,20000.0,0
+Gueye,Paris,Medio_Campista,20000.0,0
+Blanco,Real Madrid,Medio_Campista,10000.0,0
+Neymar,Paris,Delantero,200000.0,0
+Lu�s Neto,Sporting,Defensor,10000.0,0
+Dalot,Man United,Defensor,20000.0,0
+Renan Lodi,Atletico,Defensor,15000.0,0
+Pedrinho,Shakhtar,Medio_Campista,30000.0,0
+Wesley,Club Brugge,Delantero,16000.0,0
+Icardi,Paris,Delantero,55000.0,0
+Seiwald,Salzburg,Medio_Campista,22000.0,0
+Arthur,Juventus,Medio_Campista,24000.0,0
+�kriniar,Inter,Defensor,15000.0,0
+Nsoki,Club Brugge,Defensor,17000.0,0
+Ismaily,Shakhtar,Defensor,15000.0,0
+Lovato,Atalanta,Defensor,15000.0,0
+Foden,Man City,Medio_Campista,30000.0,0
+Lefort,Young Boys,Defensor,15000.0,0
+De Gea,Man United,Arquero,45000.0,0
+Schulz,Dortmund,Defensor,17000.0,0
+Zappacosta,Atalanta,Defensor,10000.0,0
+Henrichs,Leipzig,Defensor,12000.0,0
+O?uzhan �zyakup,Besiktas,Medio_Campista,12000.0,0
+Rakip,Malmo,Medio_Campista,12000.0,0
+Gerard Moreno,Villarreal,Delantero,37000.0,0
+Darmian,Inter,Defensor,10000.0,0
+Marcelo,Real Madrid,Defensor,45000.0,0
+Ili?i?,Atalanta,Medio_Campista,17000.0,0
+Camavinga,Real Madrid,Medio_Campista,45000.0,0
+Haller,Ajax,Delantero,11000.0,0
+Calabria,Milan,Defensor,19000.0,0
+Pi?tkowski,Salzburg,Defensor,20000.0,0
+Diogo Gon�alves,Benfica,Delantero,19000.0,0
+Souza,Besiktas,Medio_Campista,12000.0,0
+Greenwood,Man United,Delantero,40000.0,0
+T. Hazard,Dortmund,Medio_Campista,18000.0,0
+Origi,Liverpool,Delantero,12000.0,0
+Pedro Gon�alves,Sporting,Medio_Campista,20000.0,0
+Taarabt,Benfica,Medio_Campista,12000.0,0
+Andr� Almeida,Benfica,Defensor,19000.0,0
+Mbamba-Muanda,Club Brugge,Defensor,25000.0,0
+Rodri,Man City,Medio_Campista,38000.0,0
+Coman,Bayern,Delantero,65000.0,0
+Fred,Man United,Medio_Campista,30000.0,0
+Celeadnic,Sheriff,Arquero,10000.0,0
+Giroud,Milan,Delantero,60000.0,0
+R�ben Dias,Man City,Defensor,20000.0,0
+Tolisso,Bayern,Medio_Campista,13000.0,0
+Grimaldo,Benfica,Defensor,15000.0,0
+Ozdoev,Zenit,Medio_Campista,6000.0,0
+Moisander,Malmo,Defensor,6000.0,0
+Delap,Man City,Delantero,3000.0,0
+Maignan,Milan,Arquero,20000.0,0
+Vida,Besiktas,Defensor,19000.0,0
+Tillman,Bayern,Delantero,12000.0,0
+Evanilson,Porto,Delantero,35000.0,0
+Lucas V�zquez,Real Madrid,Medio_Campista,39000.0,0
+Sa�l ��guez,Chelsea,Medio_Campista,10000.0,0
+Freuler,Atalanta,Medio_Campista,2000.0,0
+Carson,Man City,Arquero,5000.0,0
+Verratti,Paris,Medio_Campista,69000.0,0
+Li. Martinez,Ajax,Defensor,10000.0,0
+Sterling,Man City,Medio_Campista,48000.0,0
+T. Hern�ndez,Milan,Defensor,20000.0,0
+Bernardeschi,Juventus,Medio_Campista,25000.0,0
+Dybala,Juventus,Delantero,33000.0,0
+Phillips,Liverpool,Defensor,10000.0,0
+Kalulu,Milan,Defensor,20000.0,0
+Vanaken,Club Brugge,Medio_Campista,10000.0,0
+Batshuayi,Besiktas,Delantero,15000.0,0
+Neuer,Bayern,Arquero,75000.0,0
+D'Ambrosio,Inter,Defensor,21000.0,0
+R?dvan Y?lmaz,Besiktas,Defensor,12000.0,0
+Emre Can,Dortmund,Defensor,11000.0,0
+Dahlin,Malmo,Arquero,90000.0,0
+Meunier,Dortmund,Defensor,9000.0,0
+Valverde,Real Madrid,Medio_Campista,50000.0,0
+Solet,Salzburg,Defensor,28000.0,0
+Martial,Man United,Delantero,35000.0,0
+Ramsey,Juventus,Medio_Campista,18000.0,0
+Maldini,Milan,Delantero,8000.0,0
+Bounou,Sevilla,Arquero,28000.0,0
+Van Der Brempt,Club Brugge,Defensor,10000.0,0
+Vit�o,Shakhtar,Defensor,19000.0,0
+Koopmeiners,Atalanta,Medio_Campista,10000.0,0
+Balde,Barcelona,Defensor,10000.0,0
+Dest,Barcelona,Defensor,13000.0,0
+Nico Gonz�lez,Barcelona,Medio_Campista,9000.0,0
+Kimmich,Bayern,Medio_Campista,35000.0,0
+Berget,Malmo,Medio_Campista,8000.0,0
+S�le,Bayern,Defensor,25000.0,0
+Mbemba,Porto,Defensor,24000.0,0
+Pongra?i?,Dortmund,Defensor,12000.0,0
+Ahmedhod�i?,Malmo,Defensor,12000.0,0
+Raba,Villarreal,Medio_Campista,5000.0,0
+Fernandinho,Man City,Medio_Campista,37000.0,0
+Maycon,Shakhtar,Medio_Campista,30000.0,0
+Aurier,Villarreal,Defensor,23000.0,0
+Nuno Mendes,Paris,Defensor,48000.0,0
+Alex Teixeira,Besiktas,Medio_Campista,20000.0,0
+Pepe,Porto,Defensor,45000.0,0
+Verbi?,Dynamo Kyiv,Medio_Campista,10000.0,0
+Szoboszlai,Leipzig,Medio_Campista,17000.0,0
+Ugarte,Sporting,Medio_Campista,23000.0,0
+Florenzi,Milan,Defensor,22000.0,0
+Dumfries,Inter,Defensor,27000.0,0
+Wendel,Zenit,Medio_Campista,29000.0,0
+Zhegrova,LOSC,Medio_Campista,19000.0,0
+Mbabu,Wolfsburg,Defensor,20000.0,0
+Brandt,Dortmund,Medio_Campista,20000.0,0
+Ricca,Club Brugge,Defensor,17000.0,0
+Toni Mart�nez,Porto,Delantero,29000.0,0
+Iv�n Romero,Sevilla,Delantero,10000.0,0
+Sandra,Club Brugge,Medio_Campista,25000.0,0
+Alexis S�nchez,Inter,Delantero,35000.0,0
+Zesiger,Young Boys,Defensor,1000.0,0
+Kean,Juventus,Delantero,17000.0,0
+Havertz,Chelsea,Delantero,35000.0,0
+Mata,Man United,Medio_Campista,36000.0,0
+Zagadou,Dortmund,Defensor,14000.0,0
+Bruno Fernandes,Man United,Medio_Campista,48000.0,0
+Trigueros,Villarreal,Medio_Campista,30000.0,0
+Savage,Man United,Medio_Campista,69420.0,0
+B�rgy,Young Boys,Defensor,17000.0,0
+Woltman,Liverpool,Medio_Campista,5000.0,0
+Estupi��n,Villarreal,Defensor,25000.0,0
+Danilo,Paris,Medio_Campista,23000.0,0
+Tiago Djal�,LOSC,Defensor,20000.0,0
+Brozovi?,Inter,Medio_Campista,17000.0,0
+Barkley,Chelsea,Medio_Campista,11000.0,0
+Neres,Ajax,Delantero,10000.0,0
+Ot�vio,Porto,Medio_Campista,26000.0,0
+Salih U�an,Besiktas,Medio_Campista,11000.0,0
+Javi Serrano,Atletico,Medio_Campista,10000.0,0
+Handanovi?,Inter,Arquero,20000.0,0
+Luis D�az,Porto,Delantero,70000.0,0
+Lamela,Sevilla,Medio_Campista,22000.0,0
+�alhano?lu,Inter,Medio_Campista,12000.0,0
+Pasveer,Ajax,Arquero,9000.0,0
+Ben Arfa,LOSC,Medio_Campista,10000.0,0
+Alex Telles,Man United,Defensor,23000.0,0
+Kravtsov,Zenit,Medio_Campista,8000.0,0
+Lustenberger,Young Boys,Defensor,14000.0,0
+Ulmer,Salzburg,Defensor,28000.0,0
+Kryvtsov,Shakhtar,Defensor,13000.0,0
+Gul�csi,Leipzig,Arquero,13000.0,0
+Casta�eda,Sheriff,Medio_Campista,10000.0,0
+Rekik,Sevilla,Defensor,25000.0,0
+Foyth,Villarreal,Defensor,25000.0,0
+Witsel,Dortmund,Medio_Campista,17000.0,0
+Minamino,Liverpool,Medio_Campista,18000.0,0
+Hudson-Odoi,Chelsea,Delantero,10000.0,0
+Gvardiol,Leipzig,Defensor,20000.0,0
+M. Kerzhakov,Zenit,Arquero,16000.0,0
+Lukebakio,Wolfsburg,Delantero,25000.0,0
+Rits,Club Brugge,Medio_Campista,17000.0,0
+L. de Jong,Barcelona,Delantero,30000.0,0
+Vidal,Inter,Medio_Campista,27000.0,0
+Welinton,Besiktas,Defensor,11000.0,0
+Zaidu,Porto,Defensor,22000.0,0
+Matheus Nunes,Sporting,Medio_Campista,10000.0,0
+Musso,Atalanta,Arquero,15000.0,0
+Robertson,Liverpool,Defensor,30000.0,0
+Novoa,Leipzig,Delantero,10000.0,0
+Hefti,Young Boys,Defensor,25000.0,0
+T?t?ru?anu,Milan,Arquero,27000.0,0
+Steffen,Wolfsburg,Medio_Campista,35000.0,0
+Feddal,Sporting,Defensor,12000.0,0
+Munir,Sevilla,Delantero,38000.0,0
+Mart�nez,Leipzig,Arquero,20000.0,0
+Larin,Besiktas,Delantero,11000.0,0
+Guerreiro,Dortmund,Defensor,19000.0,0
+Thiago Alc�ntara,Liverpool,Medio_Campista,40000.0,0
+C. Martins Pereira,Young Boys,Medio_Campista,15000.0,0
+Mukiele,Leipzig,Defensor,12000.0,0
+Jo�o Palhinha,Sporting,Medio_Campista,15000.0,0
+Vitinha,Porto,Medio_Campista,25000.0,0
+Sudakov,Shakhtar,Medio_Campista,8000.0,0
+Rodrygo,Real Madrid,Delantero,32000.0,0
+N'Sakala,Besiktas,Defensor,21000.0,0
+Tagliafico,Ajax,Defensor,20000.0,0
+Pervan,Wolfsburg,Arquero,12000.0,0
+Lindel�f,Man United,Defensor,20000.0,0
+Sydorchuk,Dynamo Kyiv,Medio_Campista,13000.0,0
+Jo�o F�lix,Atletico,Delantero,18000.0,0
+Sensi,Inter,Medio_Campista,10000.0,0
+Mera?,Besiktas,Defensor,11000.0,0
+Jesus,Man City,Delantero,45000.0,0
+R�diger,Chelsea,Defensor,23000.0,0
+Mandi,Villarreal,Defensor,14000.0,0
+Esteves,Sporting,Defensor,18000.0,0
+Brobbey,Leipzig,Delantero,23000.0,0
+Rosier,Besiktas,Defensor,19000.0,0
+Larsson,Malmo,Defensor,15000.0,0
+Bamba,LOSC,Delantero,24000.0,0
+Hummels,Dortmund,Defensor,30000.0,0
+Brorsson,Malmo,Defensor,10000.0,0
+L. Hern�ndez,Bayern,Defensor,25000.0,0
+Bozdo?an,Besiktas,Medio_Campista,11000.0,0
+Alan Patrick,Shakhtar,Medio_Campista,23000.0,0
+Shevchenko,Shakhtar,Arquero,1000.0,0
+Su?i?,Salzburg,Medio_Campista,35000.0,0
+Vitinho,Dynamo Kyiv,Medio_Campista,16000.0,0
+Heaton,Man United,Arquero,5000.0,0
+Edwards,Sporting,Delantero,7000.0,0
+Modri?,Real Madrid,Medio_Campista,100000.0,0
+Demb�l�,Barcelona,Delantero,25000.0,0
+Necip Uysal,Besiktas,Medio_Campista,10000.0,0
+Alisson Becker,Liverpool,Arquero,35000.0,0
+Dentinho,Shakhtar,Medio_Campista,5000.0,0
+Ke�ta,Liverpool,Medio_Campista,20000.0,0
+Faivre,Young Boys,Arquero,15000.0,0
+Herrera,Paris,Medio_Campista,30000.0,0
+Haaland,Dortmund,Delantero,150000.0,0
+Kulusevski,Juventus,Medio_Campista,10000.0,0
+Berghuis,Ajax,Delantero,22000.0,0
+Mount,Chelsea,Medio_Campista,35000.0,0
+Shabanov,Dynamo Kyiv,Defensor,15000.0,0
+Vecino,Inter,Medio_Campista,20000.0,0
+Cojocari,Sheriff,Defensor,500.0,0
+Waldschmidt,Wolfsburg,Delantero,15000.0,0
+Ibrahimovi?,Milan,Delantero,80000.0,0
+Depay,Barcelona,Delantero,20000.0,0
+Malen,Dortmund,Delantero,15000.0,0
+Alex Sandro,Juventus,Defensor,20000.0,0
+Renato Sanches,LOSC,Medio_Campista,29000.0,0
+Claudinho,Zenit,Medio_Campista,35000.0,0
+Meite,Benfica,Medio_Campista,15000.0,0
+Malinovskyi,Atalanta,Medio_Campista,14000.0,0
+Eric Garc�a,Barcelona,Defensor,10000.0,0
+Vormer,Club Brugge,Medio_Campista,12000.0,0
+Shepeliev,Dynamo Kyiv,Medio_Campista,10000.0,0
+Barrios,Zenit,Medio_Campista,25000.0,0
+Da Graca,Juventus,Delantero,5000.0,0
+Solomon,Shakhtar,Medio_Campista,12000.0,0
+Augustinsson,Sevilla,Defensor,16000.0,0
+Corona,Porto,Delantero,22000.0,0
+Moi G�mez,Villarreal,Medio_Campista,22000.0,0
+Bonucci,Juventus,Defensor,33000.0,0
+Wan-Bissaka,Man United,Defensor,25000.0,0
+Cojocaru,Sheriff,Medio_Campista,5000.0,0
+Radonji?,Benfica,Delantero,13000.0,0
+Camara,Young Boys,Defensor,15000.0,0
+Poulsen,Leipzig,Delantero,28000.0,0
+Donnarumma,Paris,Arquero,65000.0,0
+Mbete,Man City,Defensor,3000.0,0
+Ad�n,Sporting,Arquero,20000.0,0
+Draxler,Paris,Delantero,68000.0,0
+Delaney,Sevilla,Medio_Campista,28000.0,0
+Daramy,Ajax,Medio_Campista,14000.0,0
+Arnold,Wolfsburg,Medio_Campista,23000.0,0
+Abubakari,Malmo,Delantero,5000.0,0
+Laporte,Man City,Defensor,25000.0,0
+Jo�o M�rio,Porto,Delantero,180000.0,0
+Mariano D�az,Real Madrid,Delantero,17000.0,0
+Slimani,Sporting,Delantero,16000.0,0
+Lingard,Man United,Medio_Campista,27000.0,0
+Mambimbi,Young Boys,Delantero,11000.0,0
+Weah,LOSC,Delantero,28000.0,0
+Kolarov,Inter,Defensor,25000.0,0
+Orb�n,Leipzig,Defensor,10000.0,0
+J. Timber,Ajax,Defensor,15000.0,0
+Bradley,Liverpool,Medio_Campista,5000.0,0
+Loftus-Cheek,Chelsea,Medio_Campista,15000.0,0
+Klostermann,Leipzig,Defensor,19000.0,0
+Balanta,Club Brugge,Medio_Campista,20000.0,0
+Boyko,Dynamo Kyiv,Arquero,20000.0,0
+Gomez,Liverpool,Defensor,14000.0,0
+Sancho,Man United,Medio_Campista,35000.0,0
+Radelji?,Sheriff,Defensor,8000.0,0
+Adeyemi,Salzburg,Delantero,27000.0,0
+Kimpembe,Paris,Defensor,45000.0,0
+Gomes,LOSC,Medio_Campista,19000.0,0
+Maguire,Man United,Defensor,19000.0,0
+F. Nmecha,Wolfsburg,Medio_Campista,7000.0,0
+Ziyech,Chelsea,Medio_Campista,15000.0,0
+Jo�o Virginia,Sporting,Arquero,12000.0,0
+Gim�nez,Atletico,Defensor,30000.0,0
+Nali?,Malmo,Medio_Campista,5000.0,0
+Ongu�n�,Salzburg,Defensor,30000.0,0
+Traor�,Sheriff,Delantero,30000.0,0
+Izquierdo,Club Brugge,Delantero,26000.0,0
+Trippier,Atletico,Defensor,10000.0,0
+N. Williams,Liverpool,Defensor,11000.0,0
+Kuzyaev,Zenit,Medio_Campista,17000.0,0
+Di Mar�a,Paris,Delantero,100000.0,0
+Gosens,Atalanta,Medio_Campista,13000.0,0
+Sergi Roberto,Barcelona,Medio_Campista,10000.0,0
+La. Mart�nez,Inter,Delantero,85000.0,0
+Marquinhos,Paris,Defensor,60000.0,0
+Fernando Costanza,Sheriff,Defensor,15000.0,0
+Jes�s Navas,Sevilla,Delantero,30000.0,0
+Mudryk,Shakhtar,Medio_Campista,13000.0,0
+De Paul,Atletico,Medio_Campista,15000.0,0
+Pedri,Barcelona,Medio_Campista,27000.0,0
+Grbi?,LOSC,Arquero,17000.0,0
+De Sciglio,Juventus,Defensor,23000.0,0
+M. Olsson,Malmo,Defensor,70000.0,0
+Alaba,Real Madrid,Defensor,50000.0,0
+Ghezzal,Besiktas,Medio_Campista,10000.0,0
+Onana,LOSC,Medio_Campista,23000.0,0
+Kroos,Real Madrid,Medio_Campista,85000.0,0
+Chilwell,Chelsea,Defensor,25000.0,0
+Casteels,Wolfsburg,Arquero,16000.0,0
+Vallejo,Real Madrid,Defensor,15000.0,0
+Danjuma,Villarreal,Medio_Campista,55000.0,0
+Birman?evi?,Malmo,Medio_Campista,20000.0,0
+Taremi,Porto,Delantero,25000.0,0
+S�rgio Oliveira,Porto,Medio_Campista,38000.0,0
+Bruno Costa,Porto,Medio_Campista,5000.0,0

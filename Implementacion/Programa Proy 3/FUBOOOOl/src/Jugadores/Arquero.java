@@ -17,9 +17,10 @@ public class Arquero extends Jugador{
 	@Override
 	public int caluclar_puntaje()
 	{
+		System.out.println("qadasdasda");
 		List<Penalties> al = penalties;
 		int nuevo_punt=0; 
-		
+		System.out.println(this.enough);
 		if (this.enough) 
 		{
 			if (this.plus_60) 

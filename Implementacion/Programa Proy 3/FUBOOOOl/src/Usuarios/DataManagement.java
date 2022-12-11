@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import Jugadores.Jugador;
 import Liga.Dream_Team;
@@ -54,6 +55,142 @@ public class DataManagement {
 	            e.printStackTrace();
 			}
 		}
+	
+	public static void csv_jugadores()  {
+		try {
+			String ruta= "Data/Player_act.csv";
+			File file = new File(ruta);
+			FileWriter fw= new FileWriter(file);
+			BufferedWriter bw = new BufferedWriter(fw);
+			
+			if (file.exists()) 
+            {
+                file.delete();
+            }
+			file.createNewFile();
+			
+			String linea= "Nombre,Equipo,Posicion,Precio,Puntaje\n";
+			bw.write(linea);
+			for(Jugador jug:Liga.jugadores_sin.values())
+			{
+				linea="";
+				linea+= jug.getNombre()+","+jug.getReal().getNombre()+","+jug.getPosicion()+","+String.valueOf(jug.getPrecio())+","+String.valueOf(jug.getPuntaje())+"\n";
+				bw.write(linea);
+			}
+			bw.close();
+		}
+		catch(Error e) {
+			e.printStackTrace();
+			
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public static void info_liga() {
+		try {
+			String ruta= "Data/Liga_data.csv";
+			File file = new File(ruta);
+			FileWriter fw= new FileWriter(file);
+			BufferedWriter bw = new BufferedWriter(fw);
+			
+			if (file.exists()) 
+	        {
+	            file.delete();
+	        }
+				file.createNewFile();
+			Map<String, Integer> compra = Liga.get_compra();
+			String linea="";
+			for(Entry<String, Integer> add:compra.entrySet()) {
+				linea+=add.getKey()+"-"+add.getValue()+",";
+			}	
+			linea= linea.substring(0,linea.length()-1);
+			linea+="\n";	
+			bw.write(linea);
+			
+			Map<String, Integer> venta = Liga.get_ventas();
+			linea="";
+			
+			for(Entry<String, Integer> add:compra.entrySet()) {
+				linea+=add.getKey()+"-"+add.getValue()+",";
+			}	
+			linea= linea.substring(0,linea.length()-1);
+			linea+="\n";	
+			bw.write(linea);
+			
+			List<String> compr = Liga.comp_rect();
+			linea="";
+			for(String jug:compr) {
+				linea+=jug+",";
+			}
+			linea= linea.substring(0,linea.length()-1);
+			linea+= "\n";
+			bw.write(linea);
+			
+			List<String> vent = Liga.comp_rect();
+			linea="";
+			for(String jug:vent) {
+				linea+=jug+",";
+			}
+			linea= linea.substring(0,linea.length()-1);
+			linea+= "\n";
+			bw.write(linea);
+			
+			bw.close();
+			
+		}catch (IOException e){
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public static void add_liga_dat(File arch) throws IOException {
+		try {
+			BufferedReader br;
+			br = new BufferedReader(new FileReader(arch));
+			String linea; 
+			linea= br.readLine();
+			String[] comprar= linea.split(",");
+			for(String dat : comprar) {
+				
+				String[] info=dat.split("-");
+				
+				for(int i = 0; i<Integer.parseInt(info[1]);i++) {
+					Liga.add_compra(info[0]);
+				}
+			}
+			
+
+			linea= br.readLine();
+			String[] vender= linea.split(",");
+			for(String dat : vender) {
+				
+				String[] info=dat.split("-");
+				
+				for(int i = 0; i<Integer.parseInt(info[1]);i++) {
+					Liga.add_venta(info[0]);
+				}
+			}
+			
+			
+			linea= br.readLine();
+			String[] jug_comp= linea.split(",");
+			Liga.add_comp(jug_comp);
+			
+			linea= br.readLine();
+			String[] jug_vend= linea.split(",");
+			Liga.add_vend(jug_vend);
+			
+			
+			br.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	
 	public static void csvEquipo() {
 		
@@ -152,10 +289,11 @@ public class DataManagement {
 	public static void load_csv() 
 	{
 		String ruta1 = "Data/Cliente.csv";
-		File file1 = new File(ruta1);
+		File file1   = new File(ruta1);
 		String ruta2 = "Data/Dream_Team.csv";
+		String ruta3 = "Data/Liga_data.csv";
 		File file2 = new File(ruta2);
-		
+		File file3= new File(ruta3);
 		if (file2.exists() && file1.exists()) 
 		{
 			if(file1.canRead() && file2.canRead()) 
@@ -170,6 +308,21 @@ public class DataManagement {
 				
 			}
 		}
+		
+		if (file3.exists() ) 
+		{
+			if(file3.canRead()) 
+			{
+				try {
+					add_liga_dat(file3);
+					
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		}
+		
 		
 	}
 	

@@ -70,7 +70,7 @@ public class Cliente extends Usuario
 	}
 
 	public int getPuntaje() {
-		return puntaje;
+		return this.equipo_fantasia.getPuntaje_act();
 	}
 
 	public void setPuntaje(int puntaje) {
@@ -139,6 +139,7 @@ public class Cliente extends Usuario
 	{
 		Dream_Team equipo = this.equipo_fantasia;
 		Jugador vender= Liga.get_Jugador(pos, name);
+		Liga.venta(vender);
 		return equipo.vender_jugador(vender);
 		//List<Jugador> jugadore = new ArrayList<Jugador>(); 
 		//int h = 0;
@@ -264,6 +265,8 @@ public class Cliente extends Usuario
 		//		 if (Player.precio <= equipo.getPresupuesto()) 
 			//	 { 	
 				Jugador Player = Liga.get_Jugador(pos, name);
+				
+				Liga.compra(Player);
 				
 				Player.add_team(this.equipo_fantasia);
 				return this.equipo_fantasia.add_player(Player,pos);

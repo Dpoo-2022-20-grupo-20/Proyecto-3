@@ -95,8 +95,12 @@ public abstract class Jugador  {
 	}
 	
 	public int getPuntaje() {
-		return puntaje;
+		return this.puntaje;
 	}
+	
+	public void set_Puntaje(int punt) {
+		this.puntaje=punt;		
+	}	
 	//Consigue la cantidad de equipos a la que pertenece
 	public int getDream_teams() 
 	{

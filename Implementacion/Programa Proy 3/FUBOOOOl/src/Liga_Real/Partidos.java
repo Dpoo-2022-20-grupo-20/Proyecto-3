@@ -38,6 +38,10 @@ public class Partidos {
 		return Goles_loca;
 	}
 
+	public Equipo getGanador() {
+		return ganador;
+	}
+
 	public Equipo getVisitante() {
 		return visitante;
 	}

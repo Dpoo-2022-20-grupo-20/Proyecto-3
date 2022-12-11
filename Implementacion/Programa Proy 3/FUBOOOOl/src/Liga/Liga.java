@@ -23,7 +23,7 @@ public final class Liga {
 	public static List<Partidos> Historial_partidos   = new ArrayList<Partidos>();  
 	public static List<Dream_Team> equipos            = new ArrayList<Dream_Team>();
 	public static Map<String, Dream_Team>eq_map       = new HashMap<String,Dream_Team>();
-	public static TreeMap<Integer, List<Dream_Team>> Posiciones ;
+	public static TreeMap<Integer, List<Dream_Team>> Posiciones = new TreeMap<Integer,List<Dream_Team>>();
 	public static List<String> Datos_curiosos          = new ArrayList<String>();
 	public static List<Temporada_pasada> Temporadas    = new ArrayList<Temporada_pasada>();
 	public static Map<String,Map<String,Jugador>> jugadores= 
@@ -38,6 +38,113 @@ public final class Liga {
 	
 	public static Map<String,Equipo> reales= new HashMap<String,Equipo>();
 	// Getters Y Setters, Puede que no usemos todos :P 
+	
+	
+	public static Jugador Cplay1;
+	public static Jugador Cplay2;
+	public static Jugador Cplay3;
+	
+	public static Jugador Vplay1;
+	public static Jugador Vplay2;
+	public static Jugador Vplay3;
+	
+	public static Map<String,Integer> venta = new HashMap<String,Integer>();
+	public static Map<String,Integer> compra= new HashMap<String,Integer>();
+	
+	
+	
+	public static void set_up() {
+		String[] pos= {"Delantero","Medio_Campista","Defensor","Arquero"};
+		for(String posi:pos) {
+			venta.put(posi, 0);
+			compra.put(posi, 0);
+		}
+		
+	}
+	
+	
+	public static void venta(Jugador player) {
+		Vplay3=Vplay2;
+     	Vplay2=Vplay1;
+		Vplay1=player;
+		
+		String posi=player.getPosicion();
+		add_venta(posi);
+	}
+	
+	
+	public static void compra(Jugador player) {
+		Cplay3=Cplay2;
+     	Cplay2=Cplay1;
+		Cplay1=player;
+		
+		String posi=player.getPosicion();
+		add_compra(posi);
+	}
+	
+	public static void add_compra(String posi) {
+		int ar=compra.get(posi);
+		ar++;
+		compra.put(posi, ar);
+	}
+	
+	public static void add_venta(String posi) {
+		int ar=compra.get(posi);
+		ar++;
+		compra.put(posi, ar);
+	}
+	
+	
+	public static List<String> vent_rect(){
+		List<String> ret = new ArrayList<String>();
+		ret.add((Vplay1!=null)?Vplay1.getNombre():"None");
+		ret.add((Vplay2!=null)?Vplay2.getNombre():"None");
+		ret.add((Vplay3!=null)?Vplay3.getNombre():"None");		
+		return ret; 
+	}
+	
+	public static List<String> comp_rect(){
+		List<String> ret = new ArrayList<String>();
+		ret.add((Cplay1!=null)?Cplay1.getNombre():"None");
+		ret.add((Cplay2!=null)?Cplay2.getNombre():"None");
+		ret.add((Cplay3!=null)?Cplay3.getNombre():"None");		
+		return ret; 
+	}
+
+	public static Map<String,Integer> get_ventas(){
+		return venta;
+	}
+	
+	public static Map<String,Integer> get_compra(){
+		return compra;
+	}
+	
+	public static Map<String,Integer> tea_info(){
+		Map<String, Integer> ret = new HashMap<String,Integer>();
+		for(Dream_Team equipo:equipos ) {
+			ret.put(equipo.getId(), equipo.getPuntaje_act());
+		}
+		return ret;
+	}
+	
+	public static Map<String,Integer> play_info(){
+		Map<String, Integer> ret = new HashMap<String,Integer>();
+		for(Jugador jugador: jugadores_sin.values()) {
+			ret.put(jugador.getNombre(), jugador.getPuntaje());
+		}
+		return ret;
+	}
+	
+	public static Map<String,Integer> team_players() {
+		Dream_Team equip= Posiciones.lastEntry().getValue().get(0);
+		Map<String, Integer> ret = new HashMap<String,Integer>();
+		
+		for(Jugador play : equip.get_team() ) {
+			ret.put(play.getNombre(), play.getPuntaje());
+		}
+		return ret;
+	}
+	
 	
 	public  static List<Partidos> getHistorial_partidos() {
 		return Historial_partidos;
@@ -210,16 +317,44 @@ public final class Liga {
 	
 	public static void actualizar() 
 	{
-		Posiciones.clear();		
+		Posiciones.clear();
+		int cont=0;
+		List<Dream_Team> best= new ArrayList<Dream_Team>();
+		int punt=0;
 		for (Dream_Team equipo : equipos) 
 		{
-			equipo.calc_puntaje();
+			punt=equipo.calc_puntaje();
+			if(punt>cont) {
+				best.clear();
+				best.add(equipo);
+			}else if (punt == cont) {
+				best.add(equipo);
+			}
 			
-			List<Dream_Team> list=Posiciones.get(equipo);
+			System.out.println(equipo.getId());
+			List<Dream_Team> list=Posiciones.get(equipo.getPuntaje_act());
 			if (list== null) {list= new ArrayList<Dream_Team>();}
 			list.add(equipo);
 			Posiciones.put(equipo.puntaje_act, list);
-		}		
+		}
+		
+		for(Dream_Team equipos: best) {
+			equipos.add_punt(10);
+		}
+		
+	}
+
+
+	public static void add_comp(String[] jug) {
+		Cplay1=(jug[0].equals("None"))?null:Liga.get_jug(jug[0]);
+		Cplay2=(jug[1].equals("None"))?null:Liga.get_jug(jug[1]);
+		Cplay3=(jug[2].equals("None"))?null:Liga.get_jug(jug[2]);
 	} 
 	
+	public static void add_vend(String[] jug) {
+		Vplay1=(jug[0].equals("None"))?null:Liga.get_jug(jug[0]);
+		Vplay2=(jug[1].equals("None"))?null:Liga.get_jug(jug[1]);
+		Vplay3=(jug[2].equals("None"))?null:Liga.get_jug(jug[2]);
+	} 
+
 }
