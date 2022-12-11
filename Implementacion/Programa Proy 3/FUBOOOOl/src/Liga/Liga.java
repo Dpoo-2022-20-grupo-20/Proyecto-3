@@ -89,9 +89,9 @@ public final class Liga {
 	}
 	
 	public static void add_venta(String posi) {
-		int ar=compra.get(posi);
+		int ar=venta.get(posi);
 		ar++;
-		compra.put(posi, ar);
+		venta.put(posi, ar);
 	}
 	
 	
@@ -144,6 +144,13 @@ public final class Liga {
 		}
 		return ret;
 	}
+	
+	public static String nombre_best(){
+		Dream_Team equip= Posiciones.lastEntry().getValue().get(0);
+		return equip.getId();
+	}
+	
+	
 	
 	
 	public  static List<Partidos> getHistorial_partidos() {

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import Jugadores.Jugador;
+import Liga.Liga;
 import Usuarios.App;
 import presentacion.Alineacion.draw_Team;
 
@@ -20,6 +21,10 @@ public class Controller  {
 	{
 		return this.app.get_user(Nombre, Clave);
 	
+	}
+	
+	public Map<String,Integer> play_info(){
+		return Liga.play_info();
 	}
 	
 	public boolean get_adming(String Nombre, String Clave) 
@@ -138,5 +143,28 @@ public class Controller  {
 	public String sup_pos(String pos) {
 		  return this.app.sup_pos(pos);
 	}
+
+	public Map<String, Integer> tea_info() {
+		
+		return this.app.tea_info();
+	}
+
+	public Map<String,Integer> team_players() {
+		return this.app.team_players();
+	}
+	
+	public  String nombre_best(){
+		return this.app.nombre_best();
+	}
+	
+	
+	public  Map<String,Integer> get_ventas(){
+		return this.app.get_ventas();
+	}
+	
+	public Map<String,Integer> get_compra(){
+		return this.app.get_compra();
+	}
+
 }
 

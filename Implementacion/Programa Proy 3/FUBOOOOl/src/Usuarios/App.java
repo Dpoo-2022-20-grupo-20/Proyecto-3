@@ -53,7 +53,29 @@ public class App extends Observable
 		DataManagement.load_csv();		
 	}
 	
+	public Map<String,Integer> play_info(){
+		return Liga.play_info();
+	}
+	public Map<String,Integer> tea_info(){
+		return Liga.tea_info();
+	}
 	
+	
+	public Map<String,Integer> team_players() {
+		return Liga.team_players();
+	}
+	
+	public String nombre_best(){
+		return Liga.nombre_best();
+	}
+	
+	public  Map<String,Integer> get_ventas(){
+		return Liga.get_ventas();
+	}
+	
+	public Map<String,Integer> get_compra(){
+		return Liga.get_compra();
+	}
 	
 	public boolean get_user(String Nombre_Acceso,String Clave) {
 		boolean verification =false;
